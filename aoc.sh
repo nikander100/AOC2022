@@ -7,8 +7,8 @@ if [[ -z $1 ]]; then
 else
         DAY=$1
 fi
-mkdir -p "$DAY" && cd "$DAY"
+mkdir -p "day$DAY" && cd "day$DAY"
 
 wget -N --no-cookies --header="Cookie: $(cat ../cookie.txt)" "https://adventofcode.com/2022/day/${DAY}/input"
 cp "$BASE_FILE" "$MAIN_FILE"
-sed -i -e "s/%%DAY%%/$DAY/g" "$MAIN_FILE"
+# sed -i -e "s/%%DAY%%/$DAY/g" "$MAIN_FILE"
