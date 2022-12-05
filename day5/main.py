@@ -22,12 +22,7 @@ for inputLine in inputFile.split("\n"):
 		stack[int(toStack) - 1].append(stack[int(fromStack) -1].pop())
 	for x in range(int(moveAmount), 0, -1):
 		stackPartTwo[int(toStack) - 1].append(stackPartTwo[int(fromStack) -1].pop(-x))
-# for inputLine in stacks.split("\n"):
-# 	for inputCrate in inputLine.split("  "):
-# 		# if inputCrate == " ":
-# 		# 	inputCrate.pop()
-# 		print("["+inputCrate+"]")
-# 	break;
+
 print("Part 1")
 for x in stack:
 	print(x)
