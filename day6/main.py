@@ -3,7 +3,6 @@ with open("input") as f:
 
 # Part1
 for i in range(4, len(fContent)):
-    print(len(set(fContent[i-4:i])))
     if len(set(fContent[i-4:i])) == 4:
         print(i)
         break
